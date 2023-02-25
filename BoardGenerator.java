@@ -22,7 +22,7 @@ public class BoardGenerator {
                 if (ascii < 64) {
                     /* TODO: Do some work */;
                 } else {
-                    switch (pieceChar) {
+                    switch (Character.toLowerCase(pieceChar)) {
                         case 'p' :
                             piece = new Pawn();
                             break;

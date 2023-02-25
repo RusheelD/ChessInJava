@@ -1,3 +1,7 @@
+
+/**
+ * 
+ */
 public abstract class BasePiece implements Piece {
     protected PieceType type;
     protected Color color;
@@ -6,6 +10,13 @@ public abstract class BasePiece implements Piece {
     protected int stepsTaken;
     protected Board board;
 
+    /**
+     * @param row
+     * @param column
+     * @param color
+     * @param type
+     * @param board
+     */
     protected BasePiece(int row, int column, Color color, PieceType type, Board board) {
         this.row = row;
         this.column = column;
@@ -14,30 +25,57 @@ public abstract class BasePiece implements Piece {
         this.board = board;
     }
 
+    /**
+     * 
+     * @param move
+     */
     public void move(Move move) {
 
     }
 
+    /**
+     * 
+     * @return
+     */
     public int getRow() {
         return row;
     }
 
+    /**
+     *  @return
+     */
     public int getColumn() {
         return column;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Color getColor() {
         return color;
     }
 
+    /**
+     * 
+     * @return
+     */
     public PieceType getType() {
         return type;
     }
 
+    /**
+     * 
+     * @return
+     */
     public Board getBoard() {
         return board;
     }
 
+    /**
+     * 
+     * @return
+     */
     public int getStepsTaken() {
         return stepsTaken;
     }
