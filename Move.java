@@ -1,4 +1,4 @@
-package Pieces;
+
 
 public class Move {
     private int row;

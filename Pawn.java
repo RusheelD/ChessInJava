@@ -1,4 +1,3 @@
-package Pieces;
 public class Pawn extends BasePiece {
     
     public Pawn() {

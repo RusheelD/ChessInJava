@@ -1,4 +1,4 @@
-package Pieces;
+
 public enum PieceType {
     PAWN,
     KNIGHT,
