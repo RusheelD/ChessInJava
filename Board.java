@@ -16,6 +16,9 @@ public class Board {
     }
 
     public void addPiece(Piece piece) {
+        if (piece == null) {
+            return;
+        }
         int row = piece.getRow();
         int column = piece.getColumn();
         grid[row][column] = piece;

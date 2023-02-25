@@ -15,12 +15,40 @@ public class BoardGenerator {
         String line;
         while (scanner.hasNext()) {
             line = scanner.next();
+            Piece piece = null;
             for (int i = 0; i < line.length(); i++) {
-                char piece = line.charAt(i);
-                int ascii = (int)piece;
-                if(ascii < 64) {
+                char pieceChar = line.charAt(i);
+                int ascii = (int)pieceChar;
+                if (ascii < 64) {
                     /* TODO: Do some work */;
+                } else {
+                    switch (pieceChar) {
+                        case 'p' :
+                            piece = new Pawn();
+                            break;
+                        case 'n' :
+                            piece = new Knight();
+                            break;
+                        case 'b' :
+                            piece = new Bishop();
+                            break;
+                        case 'r' :
+                            piece = new Rook();
+                            break;
+                        case 'q' :
+                            piece = new Queen();
+                            break;
+                        case 'k' :
+                            piece = new King();
+                            break;
+                        default :
+                            piece = null;
+                            break;
+                    }
+
+
                 }
+                board.addPiece(piece);
             }
         }
 

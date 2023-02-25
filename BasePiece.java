@@ -3,6 +3,7 @@ public abstract class BasePiece implements Piece {
     protected Color color;
     protected int row;
     protected int column;
+    protected int stepsTaken;
     protected Board board;
 
     protected BasePiece(int row, int column, Color color, PieceType type, Board board) {
@@ -35,5 +36,9 @@ public abstract class BasePiece implements Piece {
 
     public Board getBoard() {
         return board;
+    }
+
+    public int getStepsTaken() {
+        return stepsTaken;
     }
 }
