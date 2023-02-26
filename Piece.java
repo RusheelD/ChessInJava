@@ -7,4 +7,5 @@ public interface Piece {
     public int getColumn();
     public PieceType getType();
     public Board getBoard();
+    public Piece getReplacement();
 }

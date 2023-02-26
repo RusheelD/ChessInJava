@@ -9,6 +9,7 @@ public abstract class BasePiece implements Piece {
     protected int column;
     protected int stepsTaken;
     protected Board board;
+    protected Piece replacement;
 
     /**
      * @param row
@@ -78,5 +79,13 @@ public abstract class BasePiece implements Piece {
      */
     public int getStepsTaken() {
         return stepsTaken;
+    }
+
+    /**
+     * 
+     * @return
+     */
+    public Piece getReplacement() {
+        return replacement;
     }
 }

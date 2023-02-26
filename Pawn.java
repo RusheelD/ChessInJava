@@ -1,7 +1,7 @@
 public class Pawn extends BasePiece {
     
-    public Pawn() {
-        type = PieceType.PAWN;
+    public Pawn(int row, int column, Color color, Board board) {
+        super(row, column, color, PieceType.PAWN, board);
     }
 
     public Move[] getValidAttackMoves() {
